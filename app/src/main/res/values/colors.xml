@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorStartPage">#F8ADD4</color>
+    <color name="colorStartTxt">#2D4238</color>
+    <color name="colorguideBtn">#3A97E5</color>
+    <color name="colorRbtnBg">#FFFFFF</color>
+    <color name="colorMainNavTxTrue">#F23C34</color>
+    <color name="colorMainNavTxFalse">#4E5F80</color>
+    <color name="colorFragmentSelfBg">#ECECEC</color>
+    <color name="colorListViewbg">#F0F0F0</color>
+    <color name="colorTheme">#F23C34</color>
+    <color name="colorMesgConBg">#96B1C3</color>
+    <color name="colormesgConWatch">#CF83A9</color>
+    <color name="colormusicBg">#212227</color>
+    <color name="colorStatusBar">#CCCCCC</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    内容-->
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colormusicBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/music_item1"
+                    android:id="@+id/music_iv_ig"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+                <TextView
+                    android:id="@+id/music_tv_item_number"
+                    android:textColor="@color/colorRbtnBg"
+                    android:textSize="9sp"
+                    android:text="130万"
+                    android:layout_gravity="bottom|right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/colorFragmentSelfBg"
+                android:id="@+id/music_tv_item"
+                android:text="深夜别听这些歌,再坚强也绷不住"
+                android:layout_gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

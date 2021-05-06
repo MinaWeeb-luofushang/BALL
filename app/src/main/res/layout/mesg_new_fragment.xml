@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llt_isrequest"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#00BB9C"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_load"
+            android:text="@string/fram_mesg_get_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:layerType="software"
+            android:layout_marginTop="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/SpinKitView.Large.FoldingCube"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00BB9C"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ball_mesg_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</FrameLayout>

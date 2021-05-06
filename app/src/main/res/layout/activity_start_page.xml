@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_bg"
+    android:scaleType="centerCrop"
+    tools:context=".StartPage">
+
+    <TextView
+        android:id="@+id/start_pager_close"
+        android:background="@color/cardview_dark_background"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:text="6s"
+        android:layout_gravity="right|top"
+        android:layout_width="70dp"
+        android:layout_height="30dp"/>
+
+</FrameLayout>

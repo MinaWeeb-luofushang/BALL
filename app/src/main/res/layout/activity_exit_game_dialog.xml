@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExitGameDialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fillet"
+        android:drawingCacheQuality="low"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="#ff000000"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:text="系统提示"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="10.5">
+            <TextView
+                android:layout_weight="4.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textStyle="bold"
+                android:text="您确定不再逛逛么 亲！！！"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/fillet"
+                android:id="@+id/exit_dialog_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="43sp" />
+            <TextView
+                android:layout_weight="4.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <Button
+                android:text="取消"
+                android:id="@+id/cancal_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:background="@drawable/exit_false"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:onClick="dismiss"
+                android:textSize="26sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="" />
+
+            <Button
+                android:text="确认"
+                android:textSize="26sp"
+                android:id="@+id/exit_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:background="@drawable/exit_true"
+                android:gravity="center"
+                android:onClick="exit_true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6" />
+    </LinearLayout>
+
+</LinearLayout>

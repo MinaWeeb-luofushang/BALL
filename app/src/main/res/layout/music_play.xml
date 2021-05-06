@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/music_acitity_bg"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:onClick="come_back"
+        android:src="@drawable/music_btn_back"
+        android:layout_gravity="left|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/music_song_name"
+            android:textSize="26dp"
+            android:textColor="#FFF"
+            android:text="We Can't Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/music_song_author"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textColor="#FFF"
+            android:text="Miley Cyrus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:id="@+id/music_item_civ"
+            android:src="@drawable/music_title_bg"/>
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/music_item_cpb"
+            android:layout_gravity="center"
+            android:layout_width="316dp"
+            android:layout_height="316dp"
+            app:cpb_background_progressbar_color="#b6bbd8"
+            app:cpb_background_progressbar_width="15dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="#F01C63"
+            app:cpb_progressbar_width="8dp"
+            app:cpb_round_border="false" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/music_tv_time"
+                android:textColor="@color/colorTheme"
+                android:textSize="60sp"
+                android:text="4:29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/music_iv_random"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/random_false"/>
+                <ImageView
+                    android:id="@+id/music_iv_loop"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/loop_false"/>
+                <ImageView
+                    android:id="@+id/music_iv_single"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/single_true"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/music_iv_last"
+            android:src="@drawable/music_btn_last"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/music_iv_play"
+            android:src="@drawable/music_btn_play"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/music_iv_next"
+            android:src="@drawable/music_btn_next"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/music_item1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/music_item1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/music_item1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/music_item1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
